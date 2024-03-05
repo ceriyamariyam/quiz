@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "263278452426",
+    "project_id": "noteproject-1a0a7",
+    "storage_bucket": "noteproject-1a0a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263278452426:android:23bd1df72472d62f451e33",
+        "android_client_info": {
+          "package_name": "com.example.firbase_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263278452426-natt2ffl7hpse6jnc5cngphv92nu4nml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7KrhKtgDV1yGmYBhyDzWS9sVktG-4EMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263278452426-natt2ffl7hpse6jnc5cngphv92nu4nml.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "263278452426-prj2q37ga4mcf8lqqukdhpvg0kem6ubg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.quizApp.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263278452426:android:8ddaf6d3433bd6ab451e33",
+        "android_client_info": {
+          "package_name": "com.example.quiz_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263278452426-natt2ffl7hpse6jnc5cngphv92nu4nml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7KrhKtgDV1yGmYBhyDzWS9sVktG-4EMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263278452426-natt2ffl7hpse6jnc5cngphv92nu4nml.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "263278452426-prj2q37ga4mcf8lqqukdhpvg0kem6ubg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.quizApp.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
