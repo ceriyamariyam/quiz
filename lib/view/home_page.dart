@@ -70,8 +70,8 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {
                 _auth.signOut();
               },
-              color: Colors.red,
-              child: const Text("Sign Out"),
+              color: Colors.purple,
+              child: const Text("Sign Out",style: TextStyle(color: Colors.white),),
             )
           ]),
     );
