@@ -36,28 +36,48 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _googleSignInButton() {
     return Center(
       child: SizedBox(
-        height: 50,
-        child: GestureDetector(
-          onTap: (){
-             _handleGoogleSignIn();
-          },
-          child: Text("SignIn with Google"))
-        // SignInButton(
-        //   Buttons.google,
-        //   text: "SignIn with Google",
-        //   onPressed: () {
-        //     _handleGoogleSignIn();
-        //   },
-        // ),
-      ),
+          height: 50,
+          child: SignInButton(
+            Buttons.google,
+            text: "Sign in with Google",
+            onPressed: () {
+              _handleGoogleSignIn();
+            },
+          )),
     );
   }
 
   Widget _userInfo() {
-    return SizedBox();
+    return SizedBox(
+      width: MediaQuery.of(context).size.width,
+      child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            Container(
+              height: 180,
+              width: 108,
+              decoration: BoxDecoration(
+                  image:
+                      DecorationImage(image: NetworkImage(_user!.photoURL!))),
+            ),
+            Text(_user!.email!),
+            _user!.displayName != null
+                ? Text(_user!.displayName!)
+                : const SizedBox.shrink(),
+            MaterialButton(
+              onPressed: () {
+                _auth.signOut();
+              },
+              color: Colors.red,
+              child: const Text("Sign Out"),
+            )
+          ]),
+    );
   }
 
-  _handleGoogleSignIn() {
+  void _handleGoogleSignIn() {
     try {
       GoogleAuthProvider _googleAuthProvider = GoogleAuthProvider();
       _auth.signInWithProvider(_googleAuthProvider);
